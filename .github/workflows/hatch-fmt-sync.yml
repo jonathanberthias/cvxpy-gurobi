@@ -24,7 +24,7 @@ jobs:
         run: hatch fmt --check --sync || true
 
       - name: Commit changes
-        uses: peter-evans/create-pull-request@v6
+        uses: peter-evans/create-pull-request@v7
         with:
           commit-message: "chore: sync Ruff settings"
           branch: sync-ruff-settings
